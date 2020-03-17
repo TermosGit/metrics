@@ -13,8 +13,6 @@ def createParser():
 parser = createParser()
 nameargs = parser.parse_args()
 
-# print('Enter type metric(cpu/mem):')
-# temp = input()
 if nameargs.metric_cpu == 'cpu':
     print('system.cpu.idle ' + format(psutil.cpu_times().idle))
     print('system.cpu.user ' + format(psutil.cpu_times().user))
